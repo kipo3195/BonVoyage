@@ -42,8 +42,7 @@
 
         <hr>
 
-        <!-- Date/Time -->
-        <p>Posted on January 1, 2019 at 12:00 PM</p>
+			     	
 
         <hr>
 

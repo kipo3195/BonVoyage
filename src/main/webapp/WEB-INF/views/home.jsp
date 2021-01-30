@@ -5,20 +5,42 @@
 <head>
 <style>
 
+.mainPage{
+	background: url(resources/image/mainPage/MainPage.jpg);
+	position:relative;
+	height: 1200px;
+	width: 1050px;
+}
+.mainPage a{
+	position: absolute;
+	
+	border-radius: 50%;
+	background: rgba(0,0,0,0.1);
+	text-indent: -9999em;
+}
+.seoul{
+	width:60px;
+	height: 60px;
+	right:635px;	
+	bottom:839px;
+}
+.jeju{
+	width:80px;
+	height:60px;
+	left:195px;
+	top:1050px;
+}
+.jeju:hover{
 
-	.main{
-			min-width: 900px;
-			min-height: 800px;
-			margin:0px auto;
-			text-align: center;
-			z-index: 1;
-			position: relative;
-	}
-	.main #Seoul{
-		position: absolute;
-		top:88%;
-		left:26%;
-	}
+}
+.busan{
+	width:85px;
+	height:50px;
+	top:800px;
+	left:700px;
+}
+
+
 
 </style>
 
@@ -38,11 +60,10 @@
 		<%@ include file="common/navigation.jsp" %>
 	</nav>
 
-	<div class="main">
-			<img src ="resources/image/mainPage/MainPage.jpg" width="900px" height="800">
-			<div id="Seoul">
-				<a href="#">제주</a>
-			</div>
+	<div class="mainPage">
+				<a href="voyage/jeju" class="jeju">제주</a>
+				<a href="#" class="busan">부산</a>
+				<a href="#" class="seoul">서울</a>
 	</div>
 	
 
