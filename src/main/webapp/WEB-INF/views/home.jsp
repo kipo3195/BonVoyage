@@ -5,44 +5,49 @@
 <head>
 <style>
 
-	#jeju:hover {
-		-webkit-transform:translate(0px,40px);
-		transition:all 1s;
-		cursor:pointer;
+
+	.main{
+			min-width: 900px;
+			min-height: 800px;
+			margin:0px auto;
+			text-align: center;
+			z-index: 1;
+			position: relative;
 	}
-	
-	#jeju1:hover {
-		-webkit-transform:translate(10px,10px);
-		transition:all 1s;
-		cursor: pointer;
+	.main #Seoul{
+		position: absolute;
+		top:88%;
+		left:26%;
 	}
 
 </style>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS -->
+  <link href="${pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="${pageContext.request.contextPath}/resources/css/blog-post.css" rel="stylesheet">
 </head>
+
 <body>
+	<nav>
+		<%@ include file="common/navigation.jsp" %>
+	</nav>
 
-<!-- <iframe id="main" src="resources/image/jeju.png" width="600" height="600"></iframe>
-<map name="MAIN">
-<area shape="rect" coords="0,500,0,500" href="https://www.naver.com" target="_blank" >
-</map> -->
+	<div class="main">
+			<img src ="resources/image/mainPage/MainPage.jpg" width="900px" height="800">
+			<div id="Seoul">
+				<a href="#">제주</a>
+			</div>
+	</div>
+	
 
-	<!-- a태그 요소로 페이지 전환 하는 방법 -->
-<a href="#">
-	<img src="resources/image/mainPage/main1.png" width="300" height="300">
-</a>
-	<!-- 그냥 이미지를 가져와서 스크립트로 클릭이벤트를 주는 방법 -->
-	<img id="jeju" src="resources/image/mainPage/jeju.png" width="150" height="150">
-	<img id="jeju1" src="resources/image/mainPage/jeju.png" width="150" height="150">
-
-	<a href="local/jeju">제주</a>
 
 <script>
-
-$(document).ready(function(){ //문서가 다 읽어 졌을때,
-	$("#jeju1").click(function(){ //제주1번(오른쪽 그림에 링크속성 추가)
-		location.href="local/jeju";
-	});
-});
 </script>
 </body>
 </html>
