@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bon Voyage - Sign In</title>
+  <title>Bon Voyage -- Sign In</title>
 
 <style>
 /* input style */	
